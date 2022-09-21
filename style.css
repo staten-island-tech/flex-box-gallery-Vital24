@@ -1,25 +1,28 @@
 html, 
 body,
-*{ 
+*   { 
     box-sizing: border-box;
-    padding; 0 
-    margin; 0
+    padding: 0; 
+    margin: 0;
     font-size: 62.5%;
+    background-color: bisque;
     
 }
 
 .parent { 
-    font-size: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    
 }
 
-.px-size{ 
-    font-size: 10px;
-}
+.child { 
+    box-sizing: border-box;
+    width: 100%;
+    border: solid rgb(247, 218, 183) 1rem;
+    padding: 5rem;
+    border-radius: 1rem;
 
-.rem-size { 
-    font-size: 1rem;
-}
-
-.em-size {
-    font-size: 1em;
 }
