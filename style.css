@@ -1,51 +1,56 @@
 html, 
 body,
 *   { 
+    
     box-sizing: border-box;
     padding: 0; 
     margin: 0;
     font-size: 62.5%;
-    background-color: bisque;
     font-family: 'Black Ops One', cursive;
     
 }
-
+html {
+    background-image: url(https://media.architecturaldigest.com/photos/56f1b12edc71add34a9643d5/16:9/w_2560%2Cc_limit/nike-debuts-first-ever-self-lacing-shoe-01.jpg)
+}
 .parent { 
     align-items: center;
     box-sizing: border-box;
     font-size: 10px;
     flex-direction: row;
     display: flex;
-
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    
+
 
     
 }
 
 .child { 
-    box-sizing: border-box;
     border: solid rgb(247, 218, 183) 1rem;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 3rem;
-    margin: 2rem;
+    margin: 3rem;
     text-align: center;
-    font-size: 5rem
+    font-size: 5rem;
 
 
 }
 #img { 
-    width: 50rem;
+    width: 30rem;
     
 }
 
-p, h1 {     
+p   {     
     font-style: italic;
+    font-size: 1rem;
 }
 
 h1  {
-    font-size: 10rem;
+    font-size: 3rem;
     text-align: center;
     margin: 3rem auto;
+    font-weight: 300;
 }
 
 h2  {
