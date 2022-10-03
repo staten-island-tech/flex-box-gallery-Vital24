@@ -10,7 +10,8 @@ body,
     
 }
 html {
-    background-image: url(https://media.architecturaldigest.com/photos/56f1b12edc71add34a9643d5/16:9/w_2560%2Cc_limit/nike-debuts-first-ever-self-lacing-shoe-01.jpg)
+    background-size: auto;
+    background-image: url(https://wallpapertag.com/wallpaper/full/1/c/e/356115-widescreen-good-wallpapers-3840x2160.jpg)
 }
 .parent { 
     align-items: center;
@@ -22,20 +23,24 @@ html {
     justify-content: space-evenly;
     
 
-
-    
 }
 
 .child { 
-    border: solid rgb(247, 218, 183) 1rem;
-    padding: 1rem;
+    border: solid black 1rem;
+    padding: 3rem;
     border-radius: 3rem;
     margin: 3rem;
     text-align: center;
     font-size: 5rem;
+    background-color: rgb(242, 198, 147);
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2), 10px 10px 100px     rgba(84, 0, 251, 0.699);
 
 
 }
+.child:hover {
+    background-color: white;
+}
+
 #img { 
     width: 30rem;
     
@@ -43,14 +48,16 @@ html {
 
 p   {     
     font-style: italic;
-    font-size: 1rem;
+    font-size: 2rem;
+    
 }
 
 h1  {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     margin: 3rem auto;
     font-weight: 300;
+
 }
 
 h2  {
