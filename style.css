@@ -30,15 +30,19 @@ html {
     padding: 3rem;
     border-radius: 3rem;
     margin: 3rem;
-    text-align: center;
+    text-align: center; 
     font-size: 5rem;
-    background-color: rgb(242, 198, 147);
+    background-color: white;
     box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2), 10px 10px 100px     rgba(84, 0, 251, 0.699);
-
+    overflow:hidden;
 
 }
 .child:hover {
-    background-color: white;
+    border: 3px dotted #ff7a59;
+    color: #ff7a59;
+    padding: 5rem;
+
+    transition: 500ms;
 }
 
 #img { 
@@ -46,9 +50,11 @@ html {
     
 }
 
+
+
 p   {     
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1.5rem;
     
 }
 
@@ -67,4 +73,3 @@ h2  {
 
 
 }
-
