@@ -7,11 +7,13 @@ body,
     margin: 0;
     font-size: 62.5%;
     font-family: 'Black Ops One', cursive;
+    align-items: center;
+    text-align: center;
     
 }
 html {
     background-size: 3840px 2160px;
-    background-image: url(https://wallpapertag.com/wallpaper/full/1/c/e/356115-widescreen-good-wallpapers-3840x2160.jpg)
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Watercolor-Wash-Wallpaper-Meredith-C-Bullock.jpg)
 }
 .parent { 
     align-items: center;
@@ -25,6 +27,9 @@ html {
 
 }
 
+@media  screen and (max-width) {
+    
+}
 .child { 
     border: solid black .5rem;
     padding: 3rem;
@@ -35,13 +40,20 @@ html {
     background-color: white;
     box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2), 10px 10px 100px     rgba(84, 0, 251, 0.699);
     transition: all .3s;
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-;
 
+}
+
+@keyframes flash {
+    from {background-color:rgba(84, 0, 251, 0.699);}
+    to {background-color:red;}
 }
 .child:hover {
     border: .5rem dotted #ff7a59;
     color: #ff7a59;
     padding: 5rem;
-    animation: buzz normal;
 }
 
 #img { 
@@ -49,33 +61,25 @@ html {
     
 }
 
-.buttons {
-    font-size: 3rem;
+.button {
+    font-size: 2rem;
     background-color: white ;
-    height: 5rem;
+    height: auto;
     margin: auto;
-    flex-direction: row;
     border: .1rem solid #ff7a59;
     padding: 1rem;
+    border-radius: 3rem;
     text-align: center;
-    align-items: center;
-
-
-    
-    
-}
-.buttons:hover { 
-
+    background-color: #c13584;  
 }
 
-.socials { 
+.button:hover { 
+    background-color: white;
+    padding: 2rem;
+    transition-duration: .5s;
+}
 
-}
-p   {     
-    font-style: italic;
-    font-size: 1.5rem;
-    
-}
+
 
 h1  {
     font-size: 5rem;
@@ -90,3 +94,9 @@ h2  {
     text-align: center;
     margin: 3rem auto;  
 }
+h5 {
+
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
