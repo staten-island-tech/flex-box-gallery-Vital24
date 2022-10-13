@@ -38,18 +38,19 @@ html {
     text-align: center; 
     font-size: 5rem;
     background-color: white;
-    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2), 10px 10px 100px     rgba(84, 0, 251, 0.699);
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2);
     transition: all .3s;
     animation-name: flash;
     animation-duration: 3s;
-    animation-;
+    animation-iteration-count: infinite;
 
 }
 
 @keyframes flash {
-    from {background-color:rgba(84, 0, 251, 0.699);}
-    to {background-color:red;}
+    from {box-shadow:10px 10px 2px 1px black, 10px 10px 100px     white;}
+    to {box-shadow:10px 10px 2px 1px white,  10px 10px 100px     black;}
 }
+
 .child:hover {
     border: .5rem dotted #ff7a59;
     color: #ff7a59;
@@ -61,25 +62,34 @@ html {
     
 }
 
-.button {
+
+.socials { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button {
     font-size: 2rem;
-    background-color: white ;
     height: auto;
     margin: auto;
     border: .1rem solid #ff7a59;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 3rem;
     text-align: center;
-    background-color: #c13584;  
+    background-color: black;  
 }
 
-.button:hover { 
+button:hover { 
     background-color: white;
-    padding: 2rem;
+    padding: 2.5rem;
     transition-duration: .5s;
 }
 
+#youtube {
+    background-color: red;
+    
 
+}
 
 h1  {
     font-size: 5rem;
@@ -89,13 +99,12 @@ h1  {
 
 }
 
-h2  {
-    font-size: 1rem;
+h3  {
+    font-size: 1.5rem;
     text-align: center;
-    margin: 3rem auto;  
+    margin: 2rem auto;  
 }
-h5 {
-
+h2 {
     font-style: italic;
     font-size: 1.5rem;
 }
