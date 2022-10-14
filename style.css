@@ -10,10 +10,11 @@ body,
     align-items: center;
     text-align: center;
     
+    
 }
 html {
-    background-size: 3840px 2160px;
-    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/05/Watercolor-Wash-Wallpaper-Meredith-C-Bullock.jpg)
+
+    background: #262626;
 }
 .parent { 
     align-items: center;
@@ -32,13 +33,12 @@ html {
 }
 .child { 
     border: solid black .5rem;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 3rem;
     margin: 3rem;
     text-align: center; 
     font-size: 5rem;
     background-color: white;
-    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2);
     transition: all .3s;
     animation-name: flash;
     animation-duration: 3s;
@@ -47,8 +47,8 @@ html {
 }
 
 @keyframes flash {
-    from {box-shadow:10px 10px 2px 1px black, 10px 10px 100px     white;}
-    to {box-shadow:10px 10px 2px 1px white,  10px 10px 100px     black;}
+    from {box-shadow:5px 5px 2px 1px black, 10px 10px 100px     white;}
+    to {box-shadow:5px 5px 2px 1px black,  10px 10px 100px     black;}
 }
 
 .child:hover {
@@ -63,15 +63,13 @@ html {
 }
 
 
-.socials { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+button:before {
+    content: 
 }
 button {
     font-size: 2rem;
     height: auto;
-    margin: auto;
     border: .1rem solid #ff7a59;
     padding: 2rem;
     border-radius: 3rem;
@@ -83,6 +81,9 @@ button:hover {
     background-color: white;
     padding: 2.5rem;
     transition-duration: .5s;
+    color: #ffee10;
+    box-shadow: 0 0 5rem #ffee10;
+    text-shadow: 0 0 5rem #ffee10;
 }
 
 #youtube {
@@ -109,3 +110,27 @@ h2 {
     font-size: 1.5rem;
 }
 
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    font-size: 2rem;
+    align-self: auto;
+
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.socials { 
+    display: none;
+    position: absolute;
+    max-width: 2rem;
+    z-index: 1;
+}
+.dropdown:hover .socials {display: flex;
+    flex-direction: row;
+}
+    
