@@ -10,12 +10,23 @@ body,
     align-items: center;
     text-align: center;
     
-    
 }
-html {
-
+html {   
     background: #262626;
 }
+
+#img { 
+    width: 30rem;
+    
+}
+@media screen and (max-width: 10px) {
+    body { 
+        color: #ffee10;
+    }
+
+}
+
+    /*Children and Parents*/ 
 .parent { 
     align-items: center;
     box-sizing: border-box;
@@ -27,10 +38,7 @@ html {
     
 
 }
-
-@media  screen and (max-width) {
     
-}
 .child { 
     border: solid black .5rem;
     padding: 2rem;
@@ -46,27 +54,74 @@ html {
 
 }
 
+
+
+
+/*Hovers & Animation of Children*/
 @keyframes flash {
     from {box-shadow:5px 5px 2px 1px black, 10px 10px 100px     white;}
     to {box-shadow:5px 5px 2px 1px black,  10px 10px 100px     black;}
 }
 
-.child:hover {
-    border: .5rem dotted #ff7a59;
-    color: #ff7a59;
+#blue:hover { 
+    border: .5rem dotted blue;
+    color: blue;
     padding: 5rem;
 }
+#purple:hover { 
+    border: .5rem dotted purple;
+    color: purple;
+    padding: 5rem;
 
-#img { 
-    width: 30rem;
-    
+}
+#yellow:hover { 
+    border: .5rem dotted rgb(179, 179, 39);
+    color: rgb(179, 179, 39);
+    padding: 5rem;
+
+}
+#pink:hover { 
+    border: .5rem dotted rgb(218, 63, 89);
+    color: rgb(218, 63, 89);
+    padding: 5rem;
+
+}
+#lightblue:hover { 
+    border: .5rem dotted rgb(0, 140, 255);
+    color: rgb(0, 140, 255);
+    padding: 5rem;
+
+}
+#lightgreen:hover { 
+    border: .5rem dotted rgb(0, 255, 149);
+    color: rgb(0, 255, 149);
+    padding: 5rem;
+
+}
+#red:hover { 
+    border: .5rem dotted red;
+    color: red;
+    padding: 5rem;
+
+}
+
+#orange:hover { 
+    border: .5rem dotted orange;
+    color: orange;
+    padding: 5rem;
+
+}
+#green:hover { 
+    border: .5rem dotted green;
+    color: green;
+    padding: 5rem;
+
 }
 
 
 
-button:before {
-    content: 
-}
+/*Buttons*/
+
 button {
     font-size: 2rem;
     height: auto;
@@ -85,31 +140,6 @@ button:hover {
     box-shadow: 0 0 5rem #ffee10;
     text-shadow: 0 0 5rem #ffee10;
 }
-
-#youtube {
-    background-color: red;
-    
-
-}
-
-h1  {
-    font-size: 5rem;
-    text-align: center;
-    margin: 3rem auto;
-    font-weight: 300;
-
-}
-
-h3  {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 2rem auto;  
-}
-h2 {
-    font-style: italic;
-    font-size: 1.5rem;
-}
-
 .dropbtn {
     background-color: white;
     color: black;
@@ -133,4 +163,20 @@ h2 {
 .dropdown:hover .socials {display: flex;
     flex-direction: row;
 }
-    
+
+
+/*Fonts */
+h1  {
+    font-size: 5rem;
+    text-align: center;
+    margin: 3rem auto;
+    font-weight: 300;
+
+}
+
+
+h2 {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
