@@ -141,28 +141,23 @@ button {
     font-size: 2rem;
     height: auto;
     border: .1rem solid #ff7a59;
-    padding: 2rem;
-    border-radius: 3rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
     text-align: center;
-    background-color: black;  
+    background-color: white;  
+    color: black;
+    align-self: center;
+
 }
 
 button:hover { 
-    background-color: white;
-    padding: 2.5rem;
+    padding: 2rem;
     transition-duration: .5s;
     color: #ffee10;
     box-shadow: 0 0 5rem #ffee10;
     text-shadow: 0 0 5rem #ffee10;
 }
-.dropbtn {
-    background-color: white;
-    color: black;
-    padding: 2rem;
-    font-size: 2rem;
-    align-self: auto;
 
-}
   
 .dropdown {
     position: relative;
@@ -171,12 +166,14 @@ button:hover {
   
 .socials { 
     display: none;
-    position: absolute;
+    position: relative;
     max-width: 2rem;
-    z-index: 1;
+
 }
-.dropdown:hover .socials {display: flex;
-    flex-direction: row;
+.dropdown:hover .socials {
+    display: flex;
+    flex-direction: column;
+    translate: 4.5rem;
 }
 
 
