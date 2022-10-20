@@ -148,14 +148,13 @@ html {
 /*Buttons*/
 
 button {
-    font-size: 2rem;
+    font-size: 5rem;
     height: auto;
-    border: .1rem solid #ff7a59;
-    padding: 1.5rem;
-    border-radius: 2rem;
-    text-align: center; 
-    color: black;
+    margin: 2rem;
+    color: white;
     align-self: center;
+    border: none; 
+    outline: none; 
 
 }
 
@@ -167,34 +166,16 @@ button:hover {
     text-shadow: 0 0 5rem #ffee10;
 }
 
-  
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-  
-
 .social { 
     align-items: center;
-    box-sizing: border-box;
-    font-size: 10px;
+    font-size: 5rem;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 5rem;
     
 
-}
-.socials { 
-    display: none;
-    position: relative;
-    max-width: 2rem;
-
-}
-.dropdown:hover .socials {
-    display: flex;
-    flex-direction: column;
-    translate: 4.5rem;
 }
 
 
@@ -202,7 +183,7 @@ button:hover {
 h1  {
     font-size: 5rem;
     text-align: center;
-    margin: 3rem auto;
+    margin-right: 33%;
     font-weight: 300;
     color: rgb(175, 168, 168);
 
@@ -232,16 +213,17 @@ h2 {
     transform: scaleX(0);
     transform-origin: 0 50%;
     transition: transform 0.3s ease-out;
-    border-radius: 2rem;
 }
 .sweep:hover {
-color: white;
+    padding: 1rem;
+    color: white;
 }
 .sweep:hover:before {
 transform: scaleX(1);
 
 }
 a, a:visited, a:active, a:link{
-    color: black;
+    color: white;
     text-decoration: none;
+    background-color: #262626;
 }
