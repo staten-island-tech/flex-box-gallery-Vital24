@@ -28,6 +28,12 @@ html {
     .child { 
         width: auto;
     }
+    .social {
+        width: auto;
+    }
+    button {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -36,6 +42,15 @@ html {
     }
     .child { 
         width: auto;
+    }
+    .social {
+        width: auto;
+    }
+    button {
+        font-size: 1rem;
+    }
+    .sweep { 
+        color: black;
     }
 }
 
@@ -46,7 +61,9 @@ html {
     .child { 
         width: auto;
     }
-    
+    button {
+        font-size: 1rem;
+    }
 }
 
 
@@ -181,13 +198,14 @@ button:hover {
 
 /*Fonts */
 h1  {
+
     font-size: 5rem;
     text-align: center;
     margin-right: 33%;
     font-weight: 300;
     color: rgb(175, 168, 168);
 
-}
+}   
 
 
 h2 {
